@@ -17,6 +17,7 @@ import {
   Code  
 } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
+import Image from 'next/image';
 
 const AboutPage = () => {
   return (
@@ -27,9 +28,11 @@ const AboutPage = () => {
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-32 h-32 bg-blue-500 rounded-full opacity-10"></div>
             <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-purple-500 rounded-full opacity-10"></div>
-            <img 
-              src="/images/profile.jpg"
+            <Image 
+              src="/images/profile.jpg"  
               alt="Profile Picture" 
+              width={150}
+              height={150}
               className="rounded-full mx-auto mb-6 border-4 border-white shadow-lg relative z-10"
             />
           </div>
