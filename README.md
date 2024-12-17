@@ -1,26 +1,30 @@
-# Professional Profile - M. Balamurugan
+# Personal Portfolio - Balamurugan
 
-A modern, responsive professional profile website built with Next.js, showcasing expertise in AI, ML, and RPA technologies.
+A modern, responsive professional portfolio website showcasing expertise in AI, ML, and RPA technologies, built with Next.js and deployed on Azure Static Web Apps.
 
 ## 🌟 Features
 
 - **Modern Design**: Clean, professional layout with responsive design
-- **Interactive Elements**: Animated cards and hover effects
-- **Comprehensive Sections**:
-  - Professional Summary
-  - Technical Skills
+- **Interactive UI**: Animated cards and hover effects
+- **Professional Sections**:
+  - Impact Metrics
   - AI & GENAI Excellence
   - Automation Excellence
   - Solution Design & Discovery
-  - Certifications & Achievements
+  - Professional Experience
+  - Education & Certifications
 
 ## 🛠 Tech Stack
 
 - **Framework**: Next.js 14
 - **Styling**: Tailwind CSS
 - **Icons**: Lucide React
-- **Components**: Custom UI components
 - **Deployment**: Azure Static Web Apps
+- **Version Control**: Git
+
+## 🚀 Live Demo
+
+Visit the live site: [mbalamurugan.in](https://mbalamurugan.in)
 
 ## 📋 Prerequisites
 
@@ -28,7 +32,7 @@ A modern, responsive professional profile website built with Next.js, showcasing
 - npm/yarn package manager
 - Git
 
-## 🚀 Getting Started
+## 💻 Local Development
 
 1. Clone the repository:
 ```bash
@@ -39,41 +43,41 @@ cd myblog
 2. Install dependencies:
 ```bash
 npm install
-# or
-yarn install
 ```
 
 3. Run the development server:
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## 🏗 Project Structure
+## 📁 Project Structure
 
 ```
 myblog/
 ├── public/
-│   └── images/          # Static images
+│   ├── favicon.ico
+│   ├── favicon-96x96.png
+│   ├── web-app-manifest-192x192.png
+│   ├── web-app-manifest-512x512.png
+│   └── apple-touch-icon.png
 ├── src/
 │   ├── app/
-│   │   ├── page.tsx     # Main page component
-│   │   └── layout.tsx   # Root layout
-│   ├── components/
-│   │   └── ui/          # UI components
-│   └── styles/          # Global styles
-├── next.config.js       # Next.js configuration
-└── tailwind.config.js   # Tailwind configuration
+│   │   ├── page.tsx         # Main page component
+│   │   ├── layout.tsx       # Root layout
+│   │   └── globals.css      # Global styles
+│   └── components/
+│       └── ui/              # UI components
+├── next.config.js           # Next.js configuration
+└── tailwind.config.js       # Tailwind configuration
 ```
 
-## 💻 Development
+## 🔄 Development Workflow
 
-- Make changes to the code
-- Test locally using `npm run dev`
-- Commit changes:
+1. Make changes to the code
+2. Test locally using `npm run dev`
+3. Commit changes:
 ```bash
 git add .
 git commit -m "Description of changes"
@@ -84,47 +88,22 @@ git push origin main
 
 The site is automatically deployed to Azure Static Web Apps through GitHub Actions when changes are pushed to the main branch.
 
-### Manual Deployment Steps
+## 🎨 Customization
 
-1. Build the project:
-```bash
-npm run build
-```
-
-2. The static output will be in the `out` directory
-
-3. Deploy using Azure Static Web Apps CLI or through GitHub Actions
-
-## 🔧 Configuration
-
-### Environment Variables
-
-Create a `.env.local` file in the root directory:
-```env
-NEXT_PUBLIC_SITE_URL=your-site-url
-```
-
-### Custom Domain Setup
-
-1. Go to Azure Portal
-2. Navigate to your Static Web App
-3. Go to Custom Domains
-4. Follow the instructions to add your domain
+1. Update content in `src/app/page.tsx`
+2. Modify styles in `tailwind.config.js`
+3. Add new components in `src/components`
 
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create your feature branch: `git checkout -b feature/AmazingFeature`
-3. Commit your changes: `git commit -m 'Add some AmazingFeature'`
-4. Push to the branch: `git push origin feature/AmazingFeature`
+2. Create a new branch (`git checkout -b feature/YourFeature`)
+3. Commit changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
 5. Open a Pull Request
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 👤 Contact
 
-M. Balamurugan - [balamohan_1988@yahoo.co.in](mailto:balamohan_1988@yahoo.co.in)
+Balamurugan - [balamohan_1988@yahoo.co.in](mailto:balamohan_1988@yahoo.co.in)
 
 Project Link: [https://github.com/Lokin26/myblog](https://github.com/Lokin26/myblog)
