@@ -14,7 +14,7 @@ import {
   Briefcase,
   GraduationCap,
   BookOpen,
-  Code  
+  Code,Clock  
 } from 'lucide-react';
 import { Card, CardContent } from '../components/ui/card';
 import Image from 'next/image';
@@ -41,9 +41,15 @@ const AboutPage = () => {
           </h1>
           <p className="text-xl text-gray-600 mb-2">Enterprise AI & Automation Architect</p>
           <p className="text-md text-gray-500">balamohan_1988@yahoo.co.in</p>
+          <div className="bg-white p-6 rounded-xl shadow-sm text-center transform hover:scale-105 transition-transform duration-200">
+          <Clock className="w-8 h-8 mx-auto mb-2 text-orange-600" />
+          <div className="text-2xl font-bold text-gray-800">15+</div>
+          <div className="text-sm text-gray-600">Years of Experience</div>
+        </div>
         </div>
 
         {/* Impact Metrics */}
+        
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 my-8">
           <div className="bg-white p-6 rounded-xl shadow-sm text-center transform hover:scale-105 transition-transform duration-200">
             <Brain className="w-8 h-8 mx-auto mb-2 text-purple-600" />
@@ -200,11 +206,7 @@ const AboutPage = () => {
                     <h3 className="font-semibold text-gray-700">Innovation Leadership</h3>
                     <p className="text-gray-600">Established RPA Factory & GENAI infrastructure, transforming business operations</p>
                   </div>
-                  <div className="bg-green-50 p-4 rounded-lg">
-                    <h3 className="font-semibold text-gray-700">Recognition</h3>
-                    <p className="text-gray-600">Received multiple awards including Rising STAR, Key Performer, and Vice President Award</p>
                   </div>
-                </div>
               </CardContent>
             </Card>
           </div>
