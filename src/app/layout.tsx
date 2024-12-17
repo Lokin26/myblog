@@ -1,5 +1,6 @@
 import React from 'react';
 import './globals.css';
+import Navigation from '@/components/Navigation';  // We'll create this component
 
 export const metadata = {
   title: 'Balamurugan - AI & Automation Architect',
@@ -40,7 +41,13 @@ export default function RootLayout({
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
       </head>
       <body suppressHydrationWarning>
-        {children}
+        <Navigation /> {/* Add the navigation component */}
+        <main className="min-h-screen">{children}</main>
+        <footer className="bg-gray-50 py-8 text-center text-gray-600">
+          <div className="container mx-auto">
+            © {new Date().getFullYear()} @ Balamurugan Mohan. All rights reserved.
+          </div>
+        </footer>
       </body>
     </html>
   );
